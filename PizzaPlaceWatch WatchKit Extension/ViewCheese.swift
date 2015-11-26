@@ -1,0 +1,60 @@
+//
+//  ViewCheese.swift
+//  PizzaPlaceWatch
+//
+//  Created by Carlos Brito on 25/11/15.
+//  Copyright © 2015 Carlos Brito. All rights reserved.
+//
+
+import WatchKit
+import Foundation
+
+
+class ViewCheese: WKInterfaceController {
+
+    var order : Pizza!
+
+    @IBAction func actionMozzarela() {
+        sendToNext("Mozzarela")
+    }
+
+    @IBAction func actionCheddar() {
+        sendToNext("Cheddar")
+    }
+    
+    
+    @IBAction func actionParmesano() {
+        sendToNext("Parmesano")
+    }
+    
+    @IBAction func actionNoCheese() {
+        sendToNext("No Cheese")
+    }
+    
+    
+    func sendToNext(cheese: String){
+        order.queso = cheese
+        pushControllerWithName("IdIngredients", context: order)
+        
+    }
+    
+    
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
+        order = context as! Pizza
+
+        print(order.masa)
+        
+    }
+
+    override func willActivate() {
+        // This method is called when watch view controller is about to be visible to user
+        super.willActivate()
+    }
+
+    override func didDeactivate() {
+        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
+    }
+
+}

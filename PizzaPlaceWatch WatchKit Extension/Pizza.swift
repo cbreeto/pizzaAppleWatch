@@ -1,0 +1,54 @@
+//
+//  Pizza.swift
+//  PizzaPlaceWatch
+//
+//  Created by Carlos Brito on 25/11/15.
+//  Copyright © 2015 Carlos Brito. All rights reserved.
+//
+
+import WatchKit
+
+class Pizza: NSObject {
+    
+    var size : String!
+    var masa : String!
+    var queso: String!
+    var ingredientes : [String] = ["","","","","",""]
+    
+    
+    
+    func setSizee(si: String){
+        self.size = si
+    }
+    
+    func setMasaa(masa: String){
+        self.masa = masa
+    }
+    
+    func setQuesoo(queso: String){
+        self.queso = queso
+    }
+    
+    func setIngredientess(ingredientes: [String]){
+        self.ingredientes = ingredientes
+    }
+    
+    func getSize() -> String{
+        return self.size
+    }
+    
+    func getMasa() -> String{
+        return self.masa
+    }
+    
+    func getQueso() -> String  {
+        return self.queso
+        
+    }
+    
+    func getIngredientes() -> [String] {
+        return self.ingredientes
+    }
+    
+
+}
