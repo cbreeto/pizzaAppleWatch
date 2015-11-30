@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F12FB231C068B7700D2F4AD /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F12FB221C068B7700D2F4AD /* Pizza.swift */; settings = {ASSET_TAGS = (); }; };
+		4F2AE9031C0CE64A00164B91 /* viewConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2AE9021C0CE64A00164B91 /* viewConfirmation.swift */; settings = {ASSET_TAGS = (); }; };
 		4F6A37401C061E7100B9B776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A373F1C061E7100B9B776 /* AppDelegate.swift */; };
 		4F6A37421C061E7100B9B776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A37411C061E7100B9B776 /* ViewController.swift */; };
 		4F6A37451C061E7100B9B776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F6A37431C061E7100B9B776 /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		4F12FB221C068B7700D2F4AD /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		4F2AE9021C0CE64A00164B91 /* viewConfirmation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewConfirmation.swift; sourceTree = "<group>"; };
 		4F6A373C1C061E7100B9B776 /* PizzaPlaceWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaPlaceWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6A373F1C061E7100B9B776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F6A37411C061E7100B9B776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				4F6A378E1C06678900B9B776 /* ViewIngredients.swift */,
 				4F6A37901C0667A500B9B776 /* ViewPlaceOrder.swift */,
 				4F12FB221C068B7700D2F4AD /* Pizza.swift */,
+				4F2AE9021C0CE64A00164B91 /* viewConfirmation.swift */,
 			);
 			path = "PizzaPlaceWatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				4F6A37911C0667A500B9B776 /* ViewPlaceOrder.swift in Sources */,
 				4F6A37891C06343C00B9B776 /* Volar.swift in Sources */,
 				4F6A37701C061E7100B9B776 /* InterfaceController.swift in Sources */,
+				4F2AE9031C0CE64A00164B91 /* viewConfirmation.swift in Sources */,
 				4F6A378B1C0643B700B9B776 /* viewPastaInterfaceController.swift in Sources */,
 				4F6A378D1C06676100B9B776 /* ViewCheese.swift in Sources */,
 			);

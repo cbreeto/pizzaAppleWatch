@@ -15,7 +15,20 @@ class Pizza: NSObject {
     var queso: String!
     var ingredientes : [String] = ["","","","","",""]
     
+    var inFinal : String = "false"
     
+    func setFinal(f: String){
+        self.inFinal = f
+        
+    }
+    
+    override init() {
+        self.inFinal = "false"
+        
+    }
+    func getFinal() -> String {
+        return self.inFinal
+    }
     
     func setSizee(si: String){
         self.size = si

@@ -46,7 +46,9 @@ class ViewPlaceOrder: WKInterfaceController {
     }
     
     @IBAction func actionChangeOrder() {
-        pushControllerWithName("IdSize", context: order)
+        
+        order.inFinal = "true"
+        pushControllerWithName("idChange", context: order)
         
     }
     

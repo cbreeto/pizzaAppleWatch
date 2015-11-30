@@ -34,8 +34,15 @@ class ViewCheese: WKInterfaceController {
     
     func sendToNext(cheese: String){
         order.queso = cheese
-        pushControllerWithName("IdIngredients", context: order)
         
+        
+        if order.inFinal == "true" {
+            pushControllerWithName("idChange", context: order)
+            
+        }
+        else {
+            pushControllerWithName("IdIngredients", context: order)
+        }
     }
     
     

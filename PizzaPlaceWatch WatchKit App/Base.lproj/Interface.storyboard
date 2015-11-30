@@ -12,6 +12,7 @@
                     <items>
                         <label width="136" alignment="left" text="Choose the size:" textAlignment="center" id="g5J-5G-ewy"/>
                         <slider width="1" alignment="left" maximum="3" steps="3" id="UlH-0w-TxU">
+                            <color key="color" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="refreshSize:" destination="AgC-eL-Hgc" id="b0l-8v-glw"/>
                             </connections>
@@ -73,7 +74,9 @@
             <objects>
                 <controller identifier="IdCheese" hidesWhenLoading="NO" id="m87-lB-xVE" customClass="ViewCheese" customModule="PizzaPlaceWatch_WatchKit_Extension">
                     <items>
-                        <label width="136" alignment="left" text="Type of cheese:" textAlignment="center" id="YVz-46-OEI"/>
+                        <label width="136" alignment="left" text="Type of cheese:" textAlignment="center" id="YVz-46-OEI">
+                            <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                         <button width="1" height="33" alignment="left" title="Mozzarela" id="uw3-CI-w4m">
                             <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" weight="light" pointSize="15"/>
@@ -96,7 +99,7 @@
                             </connections>
                         </button>
                         <button width="1" height="33" alignment="left" title="No cheese" id="X8t-Id-xob">
-                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" weight="light" pointSize="15"/>
                             <connections>
                                 <action selector="actionNoCheese" destination="m87-lB-xVE" id="csm-Y5-ocx"/>
@@ -112,38 +115,46 @@
             <objects>
                 <controller identifier="IdIngredients" hidesWhenLoading="NO" id="tFc-d0-ks0" customClass="ViewIngredients" customModule="PizzaPlaceWatch_WatchKit_Extension">
                     <items>
-                        <label width="135" alignment="left" text="Ingredients:" textAlignment="center" id="pim-3I-kA3"/>
+                        <label width="135" alignment="left" text="Ingredients:" textAlignment="center" id="pim-3I-kA3">
+                            <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                         <switch width="1" alignment="left" title="Jam" id="qT7-SE-bfx">
+                            <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="tintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="actionJam:" destination="tFc-d0-ks0" id="htp-Nl-mhA"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="Pepperoni" id="A5J-jh-6Sa">
+                            <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="tintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="actionPepperoni:" destination="tFc-d0-ks0" id="gaG-gd-mHq"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="Turkey" id="1gC-a2-wVh">
+                            <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="tintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="actionTurkey:" destination="tFc-d0-ks0" id="ocV-dN-MyU"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="Olives" id="QMN-Ei-1cX">
+                            <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="tintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="actionOlives:" destination="tFc-d0-ks0" id="LEi-jQ-4DD"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="Onions" id="K4C-fj-C94">
+                            <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="tintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="actionOlives:" destination="tFc-d0-ks0" id="7ZU-9t-d14"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="Pineapple" id="Ho8-wO-PrR">
+                            <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="tintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="actionPineapple:" destination="tFc-d0-ks0" id="3qh-2l-PqJ"/>
@@ -168,12 +179,55 @@
             </objects>
             <point key="canvasLocation" x="641" y="440.5"/>
         </scene>
+        <!--idChange-->
+        <scene sceneID="iOL-5Z-kgf">
+            <objects>
+                <controller identifier="idChange" hidesWhenLoading="NO" id="WMJ-bn-2gU" customClass="viewConfirmation" customModule="PizzaPlaceWatch_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="I want to change:" textAlignment="center" id="k48-7c-UW7"/>
+                        <button width="1" alignment="left" title="Size" id="MuL-m8-UmR">
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onSize" destination="WMJ-bn-2gU" id="HCJ-ep-E8Z"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Pasta" id="UUE-DG-o46">
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onPasta" destination="WMJ-bn-2gU" id="smS-Vs-Pz1"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Cheese" id="KLy-PN-UmJ">
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onCheese" destination="WMJ-bn-2gU" id="EbT-la-raO"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Ingredients" id="vbm-Xt-E9v">
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onIngredients" destination="WMJ-bn-2gU" id="g3M-rJ-7Oh"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Place Order" id="wSB-xb-B2D">
+                            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onPlaceOrder" destination="WMJ-bn-2gU" id="DSe-Op-4Px"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="819" y="690"/>
+        </scene>
         <!--IdPlaceOrder-->
         <scene sceneID="rdC-To-keS">
             <objects>
                 <controller identifier="IdPlaceOrder" hidesWhenLoading="NO" id="uZS-o5-dOa" customClass="ViewPlaceOrder" customModule="PizzaPlaceWatch_WatchKit_Extension">
                     <items>
-                        <label width="136" alignment="left" text="Your Order:" textAlignment="center" id="7AA-zg-DUv"/>
+                        <label width="136" alignment="left" text="Your Order:" textAlignment="center" id="7AA-zg-DUv">
+                            <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                         <label width="130.5" alignment="left" text="Label" id="gau-YE-euF"/>
                         <label width="136" alignment="left" text="Label" id="IsA-bt-Hj7"/>
                         <label width="132.5" alignment="left" text="Label" id="vC7-WC-Uah"/>
@@ -210,11 +264,24 @@
             <objects>
                 <controller identifier="IdFinal" hidesWhenLoading="NO" id="cfx-8e-WEf">
                     <items>
-                        <label width="136" alignment="left" text="ETA: 30 min" textAlignment="center" id="KSg-ls-he2"/>
-                        <timer width="136" height="47.5" alignment="left" textAlignment="center" enabled="YES" previewedSeconds="0" id="iet-H2-exr">
-                            <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <calendarUnit key="units" minute="YES" second="YES"/>
-                        </timer>
+                        <label width="136" alignment="left" text="The delivery will" textAlignment="left" id="KSg-ls-he2"/>
+                        <label alignment="left" text="get to you in..." id="UK2-gc-2oQ"/>
+                        <label width="135.5" alignment="left" text="24 minutes" textAlignment="center" id="SSQ-sC-B9c">
+                            <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label width="132.5" alignment="left" text="Time Elapsed:" textAlignment="center" id="Rjk-V3-rAt"/>
+                        <group width="1" alignment="left" id="B3P-HU-7qo">
+                            <items>
+                                <timer width="80" height="47.5" alignment="left" textAlignment="center" enabled="YES" previewedSeconds="0" id="iet-H2-exr">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                                <imageView width="36" height="36" alignment="left" image="Image" id="zEm-Up-3fX">
+                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                            </items>
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
                     </items>
                 </controller>
             </objects>
@@ -235,14 +302,14 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="148" y="955"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="PizzaPlaceWatch_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="485" y="1004"/>
         </scene>
     </scenes>
 </document>

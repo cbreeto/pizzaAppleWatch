@@ -33,8 +33,14 @@ class viewPastaInterfaceController: WKInterfaceController {
     
     func sendToNextView(p: String){
         order.masa = p
-        pushControllerWithName("IdCheese", context: order)
         
+        if order.inFinal == "true" {
+        pushControllerWithName("idChange", context: order)
+            
+        }
+        else {
+        pushControllerWithName("IdCheese", context: order)
+        }
     }
     
     override func awakeWithContext(context: AnyObject?) {

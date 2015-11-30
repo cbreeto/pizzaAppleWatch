@@ -15,6 +15,8 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var sizer: WKInterfaceSlider!
     @IBOutlet var sizeLabel: WKInterfaceLabel!
     
+    
+    var values : Pizza!
     var sizeValue : Float = 0
     var sizeString : String = ""
     
@@ -38,14 +40,26 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func actionSize() {
-        let values = Pizza()
+        values = Pizza()
+        
         values.size = sizeString
+        
+        if values.inFinal == "true" {
+            pushControllerWithName("idChange", context: values)
+            
+        }
+        else {
         pushControllerWithName("IdentificadorPasta", context: values)
+        }
     }
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
+        if context != nil {
+            values = context as! Pizza
+            
+        }
         // Configure interface objects here.
     }
 
